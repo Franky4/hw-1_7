@@ -6,6 +6,9 @@ class animals:
     def speaks(self):
         sound = None
 
+ class birds(animals):
+     wings = 2
+
 
 class cow(animals):
     paws = 4
@@ -31,7 +34,23 @@ class pig(animals):
     def speaks(self):
         print('Хрю-Хрю')
 
+class duck(animals):
+    paws = 2
 
+    def speaks(self):
+        print('Кря-Кря')
+
+class chicken(animals):
+    paws = 2
+
+    def speaks(self):
+        print('Ко-ко-ко')
+
+class gees(birds):
+    paws = 2
+    
+    def speaks(self):
+        print('Га-га-га')
 
 
 
