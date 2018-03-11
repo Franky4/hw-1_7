@@ -1,5 +1,7 @@
 import animals
 
+print('Добро пожаловать на ферму!')
+
 duck1 = animals.duck()
 duck1.speaks()
 
