@@ -15,7 +15,7 @@ class animals:   # общий класс животные
     def go(self):  # ходит
         None
 
-    def give(self): # сколько продукции дает животное (молоко, яйца)
+    def give(self):  # сколько продукции дает животное (молоко, яйца)
         None
 
 
@@ -37,7 +37,8 @@ class birds(animals):  # Класс птицы
      def give(self):
          print('еще одно новое яйцо')
 
-class mammal(animals):  #  Класс млекопитающие
+
+class mammal(animals):  # Класс млекопитающие
     paws = 4
     life = 100
 
@@ -46,20 +47,25 @@ class mammal(animals):  #  Класс млекопитающие
             if self.life<100:
                 self.life+=1
                 print('Уровень здоровья - {}'.format(self.life))
+
     def go(self):
         self.life-=2
         print('Уровень здоровья - {}'.format(self.life))
+
     def give(self):
         print('свежее молоко')
 
+
 class cow(mammal):
     says = 'Муууу'
+
 
 class goat(mammal):
     says = 'Мееее'
 
 class sheep(mammal):
     says = 'Беееее'
+
 
 class pig(mammal):
     says = 'Хрю-Хрю'
@@ -85,11 +91,14 @@ class pig(mammal):
 class duck(birds):
     says = 'Кря-Кря'
 
+
 class chicken(birds):
     says = 'Ко-ко-ко'
 
+
 class gees(birds):
     says = 'Га-га-га'
+
 
 
 
