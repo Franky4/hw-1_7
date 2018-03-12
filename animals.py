@@ -9,13 +9,13 @@ class animals:   # общий класс животные
         print(self.says)
 
     def eat(self):      # кушает
-        None
+        raise NotImplementedError
 
     def go(self):  # ходит
-        None
+        raise NotImplementedError
 
     def give(self):  # сколько продукции дает животное (молоко, яйца)
-        None
+        raise NotImplementedError
 
 
 class birds(animals):  # Класс птицы
