@@ -4,7 +4,7 @@ class animals:   # общий класс животные
     paws = None  # лапы
     eyes = 2     # глазка
     life = None  # уровень здоровья
-    says = ' '   # какой звук издает
+    says = ''   # какой звук издает
 
     def speaks(self):   # издает звуки
         print(self.says)
