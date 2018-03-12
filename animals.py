@@ -1,12 +1,13 @@
 
 
-class animals:  #  общий класс животные
+class animals:   # общий класс животные
     paws = None  # лапы
     eyes = 2     # глазка
     life = None  # уровень здоровья
+    says = ' '   # какой звук издает
 
     def speaks(self):   # издает звуки
-        None
+        print(self.says)
 
     def eat(self):      # кушает
         None
@@ -18,10 +19,10 @@ class animals:  #  общий класс животные
         None
 
 
-class birds(animals): # Класс птицы
+class birds(animals):  # Класс птицы
      wings = 2
      paws = 2
-     life = 100 # %
+     life = 100  # %
 
      def eat(self,food):
          if food == 'пшено' or food=='вода':
@@ -36,7 +37,7 @@ class birds(animals): # Класс птицы
      def give(self):
          print('еще одно новое яйцо')
 
-class mammal(animals): # Класс млекопитающие
+class mammal(animals):  #  Класс млекопитающие
     paws = 4
     life = 100
 
@@ -52,24 +53,16 @@ class mammal(animals): # Класс млекопитающие
         print('свежее молоко')
 
 class cow(mammal):
-
-    def speaks(self):
-        print('Мууууу')
+    says = 'Муууу'
 
 class goat(mammal):
-
-    def speaks(self):
-        print('Меееее')
+    says = 'Мееее'
 
 class sheep(mammal):
-
-    def speaks(self):
-        print('Беееее')
+    says = 'Беееее'
 
 class pig(mammal):
-
-    def speaks(self):
-        print('Хрю-Хрю')
+    says = 'Хрю-Хрю'
 
     def eat(self,food):
         if food == 'комбикорм' or food == 'вода':
@@ -90,19 +83,13 @@ class pig(mammal):
 
 
 class duck(birds):
-
-    def speaks(self):
-        print('Кря-Кря')
+    says = 'Кря-Кря'
 
 class chicken(birds):
-
-    def speaks(self):
-        print('Ко-ко-ко')
+    says = 'Ко-ко-ко'
 
 class gees(birds):
-
-    def speaks(self):
-        print('Га-га-га')
+    says = 'Га-га-га'
 
 
 
