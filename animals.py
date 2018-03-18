@@ -1,5 +1,5 @@
 
-class animals:   # общий класс животные
+class MyAnimals:   # общий класс животные
     paws = None  # лапы
     eyes = 2     # глазка
     life = None  # уровень здоровья
@@ -18,7 +18,7 @@ class animals:   # общий класс животные
         raise NotImplementedError
 
 
-class birds(animals):  # Класс птицы
+class MyBirds(MyAnimals):  # Класс птицы
     wings = 2
     paws = 2
     life = 100  # level life
@@ -36,7 +36,7 @@ class birds(animals):  # Класс птицы
         print('еще одно новое яйцо')
 
 
-class mammal(animals):  # Класс млекопитающие
+class MyMammal(MyAnimals):  # Класс млекопитающие
     paws = 4
     life = 100
 
@@ -54,19 +54,19 @@ class mammal(animals):  # Класс млекопитающие
         print('свежее молоко')
 
 
-class cow(mammal):
+class MyCow(MyMammal):
     says = 'Муууу'
 
 
-class goat(mammal):
+class MyGoat(MyMammal):
     says = 'Мееее'
 
 
-class sheep(mammal):
+class MySheep(MyMammal):
     says = 'Беееее'
 
 
-class pig(mammal):
+class MyPig(MyMammal):
     says = 'Хрю-Хрю'
 
     def eat(self, food):
@@ -87,13 +87,13 @@ class pig(mammal):
         print('Свежее мясо')
 
 
-class duck(birds):
+class MyDuck(MyBirds):
     says = 'Кря-Кря'
 
 
-class chicken(birds):
+class MyChicken(MyBirds):
     says = 'Ко-ко-ко'
 
 
-class gees(birds):
+class MyGees(MyBirds):
     says = 'Га-га-га'
